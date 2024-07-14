@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.6"
+  },
+  "dependencies": {
+    "@zondax/filecoin-solidity": "^4.0.3",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1"
+  }
+}
