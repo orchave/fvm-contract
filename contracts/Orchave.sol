@@ -79,12 +79,12 @@ contract Orchave {
                 revert("Some of Signatures is not true");
             }
         }
-        bytes32 merkleRoot = createRoot(signatureListPublicKey);
+        // bytes32 merkleRoot = createRoot(signatureListPublicKey);
 
         if (paidForVerification[cid] >= validSignatures.length) {
             blocks[cid] = hash;
-            blockVerifiers[cid] = merkleRoot;
-            blockRewards[cid] = merkleRoot;
+            blockVerifiers[cid] = signatureListPublicKey;
+            blockRewards[cid] = signatureListPublicKey;
             paidForVerification[cid] -= validSignatures.length;
         }
     }
